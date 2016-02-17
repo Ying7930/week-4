@@ -17,9 +17,9 @@ void draw() {
   for (int i = 0; i < height; i++) {
     if (count[i] < 30) {
       if (count[i] < 15) {
-        line(x[i], i, x[i] + count[i]*10, i);
+        line(x[i], i, x[i] + count[i]*10, i); //println(x, x[i] + count[i]*10); to find the length
       } else {
-        line(x[i] + (count[i] - 15)*10, i, x[i] + 150, i);
+        line(x[i] + (count[i] - 15)*10, i, x[i] + 150, i); //println(x, x[i] + 150); same
       }
     }
     count[i]++;
