@@ -30,11 +30,11 @@ void draw() {
     int realIndex = index + i;
     if (realIndex >= values.length) {
       realIndex -= values.length;
-      //println(realIndex);
-      //the highest variable is 179.
-      //println(index, millis());
-      //up to 199, down to 1, it never rest to 0.
     }
     line(i*3, height-values[realIndex], i*3, height);
+    //println(realIndex);
+    //height value is 199, the lowest is 0.
+    //println(maybeRandomHeight(), millis());
+    //very often rest to 0....
   }
 }
